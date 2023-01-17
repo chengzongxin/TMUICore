@@ -29,15 +29,13 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
-
-  s.source_files = 'TMUICore/Classes/**/*'
   
   if ENV['IS_SOURCE']
      puts '-------------------------------------------------------------------'
      puts 'Notice:TMUICore is source now'
      puts '-------------------------------------------------------------------'
-     s.public_header_files = 'TMUIKit/TMUICore/*.h'
-     s.source_files = 'TMUIKit/TMUICore/**/*'
+     s.public_header_files = 'TMUICore/Classes/*.h'
+     s.source_files = 'TMUICore/Classes/**/*'
      s.frameworks = 'Foundation', 'UIKit', 'CoreGraphics'
    else
      puts '-------------------------------------------------------------------'
