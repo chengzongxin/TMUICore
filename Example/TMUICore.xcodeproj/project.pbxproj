@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16DEEB0A297651A100C386DC /* TMUIConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DEEAFC297651A100C386DC /* TMUIConfiguration.m */; };
+		16DEEB0B297651A100C386DC /* TMUIRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DEEAFE297651A100C386DC /* TMUIRuntime.m */; };
+		16DEEB0C297651A200C386DC /* TMUIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DEEB00297651A100C386DC /* TMUIHelper.m */; };
+		16DEEB0D297651A200C386DC /* TMUIWeakObjectContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DEEB05297651A100C386DC /* TMUIWeakObjectContainer.m */; };
+		16DEEB0F2976728C00C386DC /* TMUIAssociatedPropertyDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 16DEEB02297651A100C386DC /* TMUIAssociatedPropertyDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16DEEB102976729100C386DC /* TMUICommonDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 16DEEAFF297651A100C386DC /* TMUICommonDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16DEEB112976729300C386DC /* TMUIConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 16DEEB03297651A100C386DC /* TMUIConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16DEEB122976729900C386DC /* TMUIConfigurationMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 16DEEAFD297651A100C386DC /* TMUIConfigurationMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16DEEB132976729D00C386DC /* TMUICore.h in Headers */ = {isa = PBXBuildFile; fileRef = 16DEEB09297651A100C386DC /* TMUICore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16DEEB14297672A100C386DC /* TMUICoreGraphicsDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 16DEEB04297651A100C386DC /* TMUICoreGraphicsDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16DEEB15297672AE00C386DC /* TMUIHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 16DEEB06297651A100C386DC /* TMUIHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16DEEB16297672B300C386DC /* TMUIKitDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 16DEEB07297651A100C386DC /* TMUIKitDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16DEEB17297672B700C386DC /* TMUIRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 16DEEB08297651A100C386DC /* TMUIRuntime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16DEEB18297672BB00C386DC /* TMUIWeakObjectContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 16DEEB01297651A100C386DC /* TMUIWeakObjectContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1B698EAD54306D80DEED13EC /* Pods_TMUICore_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C640E54A4A77140D6B4616A4 /* Pods_TMUICore_Tests.framework */; };
 		38C48D4CB8B2496498EE5411 /* Pods_TMUICore_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A4748AD9E3661F3C0AD871 /* Pods_TMUICore_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -36,9 +50,36 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		16DEEAF12976517F00C386DC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		007C6652B350C26750AF3437 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		007C6652B350C26750AF3437 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		0B87ED764EBE7B7BAAF674FD /* Pods-TMUICore_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMUICore_Example.debug.xcconfig"; path = "Target Support Files/Pods-TMUICore_Example/Pods-TMUICore_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		16DEEAF32976517F00C386DC /* libTMUICoreBinary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTMUICoreBinary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		16DEEAFC297651A100C386DC /* TMUIConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TMUIConfiguration.m; path = ../../TMUICore/Classes/TMUIConfiguration.m; sourceTree = "<group>"; };
+		16DEEAFD297651A100C386DC /* TMUIConfigurationMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TMUIConfigurationMacros.h; path = ../../TMUICore/Classes/TMUIConfigurationMacros.h; sourceTree = "<group>"; };
+		16DEEAFE297651A100C386DC /* TMUIRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TMUIRuntime.m; path = ../../TMUICore/Classes/TMUIRuntime.m; sourceTree = "<group>"; };
+		16DEEAFF297651A100C386DC /* TMUICommonDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TMUICommonDefines.h; path = ../../TMUICore/Classes/TMUICommonDefines.h; sourceTree = "<group>"; };
+		16DEEB00297651A100C386DC /* TMUIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TMUIHelper.m; path = ../../TMUICore/Classes/TMUIHelper.m; sourceTree = "<group>"; };
+		16DEEB01297651A100C386DC /* TMUIWeakObjectContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TMUIWeakObjectContainer.h; path = ../../TMUICore/Classes/TMUIWeakObjectContainer.h; sourceTree = "<group>"; };
+		16DEEB02297651A100C386DC /* TMUIAssociatedPropertyDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TMUIAssociatedPropertyDefines.h; path = ../../TMUICore/Classes/TMUIAssociatedPropertyDefines.h; sourceTree = "<group>"; };
+		16DEEB03297651A100C386DC /* TMUIConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TMUIConfiguration.h; path = ../../TMUICore/Classes/TMUIConfiguration.h; sourceTree = "<group>"; };
+		16DEEB04297651A100C386DC /* TMUICoreGraphicsDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TMUICoreGraphicsDefines.h; path = ../../TMUICore/Classes/TMUICoreGraphicsDefines.h; sourceTree = "<group>"; };
+		16DEEB05297651A100C386DC /* TMUIWeakObjectContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TMUIWeakObjectContainer.m; path = ../../TMUICore/Classes/TMUIWeakObjectContainer.m; sourceTree = "<group>"; };
+		16DEEB06297651A100C386DC /* TMUIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TMUIHelper.h; path = ../../TMUICore/Classes/TMUIHelper.h; sourceTree = "<group>"; };
+		16DEEB07297651A100C386DC /* TMUIKitDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TMUIKitDefines.h; path = ../../TMUICore/Classes/TMUIKitDefines.h; sourceTree = "<group>"; };
+		16DEEB08297651A100C386DC /* TMUIRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TMUIRuntime.h; path = ../../TMUICore/Classes/TMUIRuntime.h; sourceTree = "<group>"; };
+		16DEEB09297651A100C386DC /* TMUICore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TMUICore.h; path = ../../TMUICore/Classes/TMUICore.h; sourceTree = "<group>"; };
 		46FFB0A52A42E7BDE74B57F4 /* Pods-TMUICore_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMUICore_Tests.release.xcconfig"; path = "Target Support Files/Pods-TMUICore_Tests/Pods-TMUICore_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* TMUICore_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMUICore_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -59,17 +100,24 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		69AFFC0EB1B17ED4DB6211DB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		69AFFC0EB1B17ED4DB6211DB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8FDA7367961D37D0DC948B80 /* Pods-TMUICore_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMUICore_Example.release.xcconfig"; path = "Target Support Files/Pods-TMUICore_Example/Pods-TMUICore_Example.release.xcconfig"; sourceTree = "<group>"; };
-		C63596A2F80FAF6C5C3247EF /* TMUICore.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = TMUICore.podspec; path = ../TMUICore.podspec; sourceTree = "<group>"; };
+		C63596A2F80FAF6C5C3247EF /* TMUICore.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TMUICore.podspec; path = ../TMUICore.podspec; sourceTree = "<group>"; };
 		C640E54A4A77140D6B4616A4 /* Pods_TMUICore_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TMUICore_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF6E316A2A7801BB96373373 /* Pods-TMUICore_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMUICore_Tests.debug.xcconfig"; path = "Target Support Files/Pods-TMUICore_Tests/Pods-TMUICore_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F6A4748AD9E3661F3C0AD871 /* Pods_TMUICore_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TMUICore_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		16DEEAF02976517F00C386DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6003F587195388D20070C39A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -95,12 +143,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16DEEAF42976517F00C386DC /* TMUICoreBinary */ = {
+			isa = PBXGroup;
+			children = (
+				16DEEB02297651A100C386DC /* TMUIAssociatedPropertyDefines.h */,
+				16DEEAFF297651A100C386DC /* TMUICommonDefines.h */,
+				16DEEB03297651A100C386DC /* TMUIConfiguration.h */,
+				16DEEAFD297651A100C386DC /* TMUIConfigurationMacros.h */,
+				16DEEB09297651A100C386DC /* TMUICore.h */,
+				16DEEB04297651A100C386DC /* TMUICoreGraphicsDefines.h */,
+				16DEEB06297651A100C386DC /* TMUIHelper.h */,
+				16DEEB07297651A100C386DC /* TMUIKitDefines.h */,
+				16DEEB08297651A100C386DC /* TMUIRuntime.h */,
+				16DEEB01297651A100C386DC /* TMUIWeakObjectContainer.h */,
+				16DEEAFC297651A100C386DC /* TMUIConfiguration.m */,
+				16DEEB00297651A100C386DC /* TMUIHelper.m */,
+				16DEEAFE297651A100C386DC /* TMUIRuntime.m */,
+				16DEEB05297651A100C386DC /* TMUIWeakObjectContainer.m */,
+			);
+			path = TMUICoreBinary;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for TMUICore */,
 				6003F5B5195388D20070C39A /* Tests */,
+				16DEEAF42976517F00C386DC /* TMUICoreBinary */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
 				A5CE0F581DBDF8CF0A076135 /* Pods */,
@@ -112,6 +182,7 @@
 			children = (
 				6003F58A195388D20070C39A /* TMUICore_Example.app */,
 				6003F5AE195388D20070C39A /* TMUICore_Tests.xctest */,
+				16DEEAF32976517F00C386DC /* libTMUICoreBinary.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -193,13 +264,50 @@
 				EF6E316A2A7801BB96373373 /* Pods-TMUICore_Tests.debug.xcconfig */,
 				46FFB0A52A42E7BDE74B57F4 /* Pods-TMUICore_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		16DEEB0E297651A700C386DC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16DEEB0F2976728C00C386DC /* TMUIAssociatedPropertyDefines.h in Headers */,
+				16DEEB102976729100C386DC /* TMUICommonDefines.h in Headers */,
+				16DEEB112976729300C386DC /* TMUIConfiguration.h in Headers */,
+				16DEEB122976729900C386DC /* TMUIConfigurationMacros.h in Headers */,
+				16DEEB132976729D00C386DC /* TMUICore.h in Headers */,
+				16DEEB14297672A100C386DC /* TMUICoreGraphicsDefines.h in Headers */,
+				16DEEB15297672AE00C386DC /* TMUIHelper.h in Headers */,
+				16DEEB16297672B300C386DC /* TMUIKitDefines.h in Headers */,
+				16DEEB17297672B700C386DC /* TMUIRuntime.h in Headers */,
+				16DEEB18297672BB00C386DC /* TMUIWeakObjectContainer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		16DEEAF22976517F00C386DC /* TMUICoreBinary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16DEEAFB2976517F00C386DC /* Build configuration list for PBXNativeTarget "TMUICoreBinary" */;
+			buildPhases = (
+				16DEEAEF2976517F00C386DC /* Sources */,
+				16DEEAF02976517F00C386DC /* Frameworks */,
+				16DEEAF12976517F00C386DC /* CopyFiles */,
+				16DEEB0E297651A700C386DC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TMUICoreBinary;
+			productName = TMUICoreBinary;
+			productReference = 16DEEAF32976517F00C386DC /* libTMUICoreBinary.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		6003F589195388D20070C39A /* TMUICore_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "TMUICore_Example" */;
@@ -248,6 +356,10 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Joe.cheng;
 				TargetAttributes = {
+					16DEEAF22976517F00C386DC = {
+						CreatedOnToolsVersion = 13.2.1;
+						ProvisioningStyle = Automatic;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -258,6 +370,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -268,6 +381,7 @@
 			targets = (
 				6003F589195388D20070C39A /* TMUICore_Example */,
 				6003F5AD195388D20070C39A /* TMUICore_Tests */,
+				16DEEAF22976517F00C386DC /* TMUICoreBinary */,
 			);
 		};
 /* End PBXProject section */
@@ -360,6 +474,17 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		16DEEAEF2976517F00C386DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16DEEB0D297651A200C386DC /* TMUIWeakObjectContainer.m in Sources */,
+				16DEEB0B297651A100C386DC /* TMUIRuntime.m in Sources */,
+				16DEEB0C297651A200C386DC /* TMUIHelper.m in Sources */,
+				16DEEB0A297651A100C386DC /* TMUIConfiguration.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6003F586195388D20070C39A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -416,6 +541,79 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		16DEEAF92976517F00C386DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		16DEEAFA2976517F00C386DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		6003F5BD195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -570,6 +768,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		16DEEAFB2976517F00C386DC /* Build configuration list for PBXNativeTarget "TMUICoreBinary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16DEEAF92976517F00C386DC /* Debug */,
+				16DEEAFA2976517F00C386DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6003F585195388D10070C39A /* Build configuration list for PBXProject "TMUICore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
