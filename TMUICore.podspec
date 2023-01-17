@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TMUICore'
-  s.version          = '0.1.0'
+  s.version          = '2.0.7'
   s.summary          = 'A short description of TMUICore.'
 
 # This description is used to generate tags and improve search results.
@@ -28,15 +28,23 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/Joe.cheng/TMUICore.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'TMUICore/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'TMUICore' => ['TMUICore/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  if ENV['IS_SOURCE']
+     puts '-------------------------------------------------------------------'
+     puts 'Notice:TMUICore is source now'
+     puts '-------------------------------------------------------------------'
+     s.public_header_files = 'TMUIKit/TMUICore/*.h'
+     s.source_files = 'TMUIKit/TMUICore/**/*'
+     s.frameworks = 'Foundation', 'UIKit', 'CoreGraphics'
+   else
+     puts '-------------------------------------------------------------------'
+     puts 'Notice:TMUICore is binary now'
+     puts '-------------------------------------------------------------------'
+     s.source_files = 'Pod/Products/include/**'
+     s.public_header_files = 'Pod/Products/include/*.h'
+     s.ios.vendored_libraries = 'Pod/Products/lib/libTMUICoreBinary.a'
+   end
 end

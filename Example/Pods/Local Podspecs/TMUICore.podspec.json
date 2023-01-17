@@ -1,0 +1,22 @@
+{
+  "name": "TMUICore",
+  "version": "0.1.0",
+  "summary": "A short description of TMUICore.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Joe.cheng/TMUICore",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Joe.cheng": "joe.cheng@corp.to8to.com"
+  },
+  "source": {
+    "git": "https://github.com/Joe.cheng/TMUICore.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "TMUICore/Classes/**/*"
+}
