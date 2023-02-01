@@ -30,19 +30,20 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
   
-  # if ENV['IS_SOURCE']
-  #    puts '-------------------------------------------------------------------'
-  #    puts 'Notice:TMUICore is source now'
-  #    puts '-------------------------------------------------------------------'
+   if ENV['IS_SOURCE']
+      puts '-------------------------------------------------------------------'
+      puts 'Notice:TMUICore is source now'
+      puts '-------------------------------------------------------------------'
      s.public_header_files = 'TMUICore/Classes/*.h'
      s.source_files = 'TMUICore/Classes/**/*'
      s.frameworks = 'Foundation', 'UIKit', 'CoreGraphics'
-  #  else
-  #    puts '-------------------------------------------------------------------'
-  #    puts 'Notice:TMUICore is binary now'
-  #    puts '-------------------------------------------------------------------'
-  #    s.source_files = 'Pod/Products/include/**'
-  #    s.public_header_files = 'Pod/Products/include/*.h'
-  #    s.ios.vendored_libraries = 'Pod/Products/lib/libTMUICoreBinary.a'
-  #  end
+    else
+      puts '-------------------------------------------------------------------'
+      puts 'Notice:TMUICore is binary now'
+      puts '-------------------------------------------------------------------'
+#      s.source_files = 'Pod/Products/include/**'
+#      s.public_header_files = 'Pod/Products/include/*.h'
+#      s.ios.vendored_libraries = 'Pod/Products/lib/libTMUICoreBinary.a'
+      s.ios.vendored_framework = 'TMUICore-2.0.8/ios/TMUICore.framework'
+    end
 end

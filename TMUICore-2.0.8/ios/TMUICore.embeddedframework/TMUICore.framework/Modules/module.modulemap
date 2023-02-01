@@ -1,6 +1,0 @@
-framework module TMUICore {
-  umbrella header "TMUICore.h"
-
-  export *
-  module * { export * }
-}
